@@ -1,262 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Palak Enterprises</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#f4f6f9;
-color:#333;
-}
-
-header{
-background:#0b3d91;
-color:white;
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:fixed;
-width:100%;
-top:0;
-z-index:1000;
-}
-
-header h2{
-font-weight:600;
-}
-
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-size:14px;
-}
-
-.hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1581092335397-9583eb92d232");
-background-size:cover;
-color:white;
-padding:20px;
-}
-
-.hero h1{
-font-size:42px;
-margin-bottom:15px;
-}
-
-.hero p{
-margin-bottom:20px;
-}
-
-.btn{
-background:#ff7a00;
-padding:12px 25px;
-color:white;
-text-decoration:none;
-border-radius:5px;
-}
-
-section{
-padding:80px 10%;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:40px;
-font-size:28px;
-color:#0b3d91;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-text-align:center;
-}
-
-.card:hover{
-transform:translateY(-5px);
-transition:0.3s;
-}
-
-.about{
-text-align:center;
-max-width:800px;
-margin:auto;
-}
-
-.contact{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-input,textarea{
-width:100%;
-padding:10px;
-margin-top:10px;
-border:1px solid #ccc;
-border-radius:5px;
-}
-
-button{
-background:#0b3d91;
-color:white;
-padding:12px;
-border:none;
-margin-top:10px;
-cursor:pointer;
-}
-
-footer{
-background:#0b3d91;
-color:white;
-text-align:center;
-padding:15px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:12px 15px;
-border-radius:50%;
-font-size:22px;
-text-decoration:none;
-}
-
-</style>
 </head>
 
 <body>
 
-<header>
-<h2>Palak Enterprises</h2>
+<header class="header">
+
+<div class="logo">
+Palak Enterprises
+</div>
 
 <nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#industries">Industries</a>
-<a href="#contact">Contact</a>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="industries.html">Industries</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+
 </nav>
+
 </header>
 
-<section class="hero" id="home">
 
-<div>
-<h1>Reliable Manpower & Project Solutions</h1>
-<p>Providing skilled manpower and industrial project support for businesses.</p>
-<a href="#contact" class="btn">Request Manpower</a>
-</div>
+<section class="hero">
 
-</section>
+<div class="hero-content">
 
-<section id="about">
+<h1>Reliable Manpower & Industrial Project Solutions</h1>
 
-<h2 class="section-title">About Us</h2>
-
-<div class="about">
 <p>
-Palak Enterprises provides reliable manpower supply and industrial project work
-services. We support companies by providing trained and skilled workers
-to help complete projects efficiently and on time.
+Professional manpower supply and project execution
+for industries, factories and construction companies.
 </p>
-</div>
 
-</section>
+<div class="hero-buttons">
 
-<section id="services">
+<a href="contact.html" class="btn-primary">Request Manpower</a>
 
-<h2 class="section-title">Our Services</h2>
-
-<div class="cards">
-
-<div class="card">Manpower Supply</div>
-<div class="card">Skilled Labour Supply</div>
-<div class="card">Unskilled Labour Supply</div>
-<div class="card">Industrial Project Work</div>
-<div class="card">Contract Staffing</div>
-
-</div>
-
-</section>
-
-<section id="industries">
-
-<h2 class="section-title">Industries We Serve</h2>
-
-<div class="cards">
-
-<div class="card">Manufacturing</div>
-<div class="card">Construction</div>
-<div class="card">Warehousing</div>
-<div class="card">Logistics</div>
-<div class="card">Industrial Plants</div>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2 class="section-title">Contact Us</h2>
-
-<div class="contact">
-
-<div>
-<p><b>Phone:</b> Add your phone number</p>
-<p><b>Email:</b> Add your email</p>
-<p><b>Location:</b> Pune, India</p>
-</div>
-
-<div>
-
-<form>
-
-<input type="text" placeholder="Your Name">
-
-<input type="email" placeholder="Your Email">
-
-<textarea rows="4" placeholder="Your Message"></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
+<a href="about.html" class="btn-secondary">Learn More</a>
 
 </div>
 
 </div>
 
 </section>
+
+
+<section class="stats">
+
+<div class="stat-box">
+<h2>50+</h2>
+<p>Projects Completed</p>
+</div>
+
+<div class="stat-box">
+<h2>200+</h2>
+<p>Workers Provided</p>
+</div>
+
+<div class="stat-box">
+<h2>30+</h2>
+<p>Clients Served</p>
+</div>
+
+</section>
+
+
+<section class="services-preview">
+
+<h2>Our Services</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<i class="fa-solid fa-helmet-safety"></i>
+<h3>Manpower Supply</h3>
+<p>Reliable workforce for industrial operations.</p>
+</div>
+
+<div class="service-card">
+<i class="fa-solid fa-industry"></i>
+<h3>Industrial Projects</h3>
+<p>Support for industrial and construction projects.</p>
+</div>
+
+<div class="service-card">
+<i class="fa-solid fa-people-group"></i>
+<h3>Contract Staffing</h3>
+<p>Flexible manpower solutions for businesses.</p>
+</div>
+
+</div>
+
+</section>
+
 
 <footer>
 
@@ -264,7 +115,11 @@ to help complete projects efficiently and on time.
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/919000000000">W</a>
+
+<a href="https://wa.me/919075991274" class="whatsapp">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
 
 </body>
+</html>
 </html>
